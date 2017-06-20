@@ -16,7 +16,7 @@ public class FixtureExampleTest {
   public void testWithBooks() throws Exception {
     Fixture.of(Author.class).addTemplate("valid", new Rule() {{
       add("firstName", firstName());
-      add("lastName", firstName());
+      add("lastName", lastName());
       add("email", "${firstName}.${lastName}@email.com");
     }});
 
